@@ -5,10 +5,10 @@ import { SITE_TITLE } from '../consts';
 <header class="stripe-header">
 	<nav class="stripe-nav">
 		<div class="nav-left">
-			<a href="/" class="nav-logo" aria-label="Home">
+			<a href={import.meta.env.BASE_URL} class="nav-logo" aria-label="Home">
 				jbn.blog
 			</a>
-			<a href="/" class="nav-button active">
+			<a href={import.meta.env.BASE_URL} class="nav-button active">
 				<span class="hotkey">[B]</span>Blog
 			</a>
 			<a href="https://www.jbn-dev.com/" target="_blank" class="nav-button">
