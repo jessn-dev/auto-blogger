@@ -65,6 +65,7 @@ const { title, description, image = FallbackImage } = Astro.props;
     posthog.init('phc_A8vDFLwcViNwfxZ5vdymHafZ3U6KVvxmEe3cEnoRxuC3', {
         api_host: 'https://us.i.posthog.com',
         defaults: '2026-05-30',
-        person_profiles: 'always'
+        person_profiles: 'always',
+        capture_pageleave: true
     })
 </script>
