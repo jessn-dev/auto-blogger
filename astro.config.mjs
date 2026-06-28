@@ -7,7 +7,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://jessn-dev.github.io',
-	base: '/auto-blogger/',
+	base: '/engineering-blog/',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
