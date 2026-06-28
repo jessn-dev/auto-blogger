@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jessn-dev.github.io/auto-blogger/sitemap-index.xml

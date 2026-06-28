@@ -14,6 +14,20 @@ const { title, description, pubDate, updatedDate, heroImage, heroImageAttributio
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		<script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			"headline": title,
+			"description": description,
+			"image": heroImage ? heroImage : undefined,
+			"datePublished": pubDate.toISOString(),
+			"dateModified": updatedDate ? updatedDate.toISOString() : pubDate.toISOString(),
+			"author": {
+				"@type": "Person",
+				"name": "Jesse Ngolab",
+				"url": "https://www.jbn-dev.com/"
+			}
+		})} />
 		<style>
 			/* STRIPE DEV ARTICLE AESTHETIC */
 			main {

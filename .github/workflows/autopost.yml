@@ -2,11 +2,11 @@ name: Generate Weekly Blog Posts
 
 on:
   schedule:
-    # Runs at 00:00 UTC on Tuesday (2), Thursday (4), Saturday (6), and Sunday (0)
-    - cron: '0 0 * * 2'
-    - cron: '0 0 * * 4'
-    - cron: '0 0 * * 6'
-    - cron: '0 0 * * 0'
+    # Runs at 13:00 UTC (8:00 AM Central Time) on Tuesday (2), Thursday (4), Saturday (6), and Sunday (0)
+    - cron: '0 13 * * 2'
+    - cron: '0 13 * * 4'
+    - cron: '0 13 * * 6'
+    - cron: '0 13 * * 0'
   workflow_dispatch:
     inputs:
       persona:
